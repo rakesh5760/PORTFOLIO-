@@ -149,7 +149,7 @@ contactForm.addEventListener("submit", async function (e) {
   const formData = new FormData(contactForm);
 
   try {
-    const response = await fetch("https://portfolio-w42h.onrender.com", {
+    const response = await fetch("https://portfolio-w42h.onrender.com/contact", {
       method: "POST",
       body: formData
     });
@@ -172,4 +172,5 @@ contactForm.addEventListener("submit", async function (e) {
   submitBtn.disabled = false;
   submitBtn.textContent = "Send Message";
 });
+
 
