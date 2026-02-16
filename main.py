@@ -11,7 +11,8 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://127.0.0.1:5500",
-        "http://localhost:5500"
+        "http://localhost:5500",
+        "https://rakesh5760.github.io/PORTFOLIO-/"
     ],
     allow_methods=["*"],
     allow_headers=["*"],
@@ -64,3 +65,4 @@ Message:
             status_code=500,
             content={"success": False, "error": str(e)}
         )
+
